@@ -33,32 +33,53 @@
         text-align: center;
     }
 
+    .buyme {
+        font-size: 2rem;
+        padding: 1.5rem 3rem;
+        margin: 2rem 0;
+        width: 80%;
+        max-width: 300px;
+    }
+
     .whatis__info {
-        min-width: 150px;
-        max-width: 175px;
+        min-width: 280px;
+        max-width: 320px;
         text-align: center;
+        padding: 2rem;
+        margin: 1rem 0;
+        background-color: var(--info-color);
+        border-radius: 15px;
     }
 
     .whatis__info h3 {
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .whatis__info p {
         text-align: justify;
         text-align-last: center;
         hyphens: auto;
+        font-size: 1.2rem;
+        line-height: 1.6;
     }
 
     .whatis__content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 2.5rem;
+        padding: 1rem;
     }
 
     .whatis__heading {
         text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .whatis__heading h2 {
+        font-size: 2.5rem;
     }
 
     .howtobuy {
