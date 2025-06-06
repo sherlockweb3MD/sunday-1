@@ -1,4 +1,9 @@
 @media screen and (max-width: 500px) {
+    body {
+        width: 95%;
+        padding: 0 1rem;
+    }
+
     .header__menu {
         display: none;
     }
@@ -34,52 +39,76 @@
     }
 
     .buyme {
-        font-size: 2rem;
-        padding: 1.5rem 3rem;
-        margin: 2rem 0;
-        width: 80%;
-        max-width: 300px;
+        font-size: 1.8rem;
+        padding: 1.2rem 2rem;
+        margin: 2rem auto;
+        width: 90%;
+        max-width: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .whatis__info {
-        min-width: 280px;
-        max-width: 320px;
+        width: 100%;
+        min-width: unset;
+        max-width: 100%;
         text-align: center;
-        padding: 2rem;
+        padding: 1.5rem;
         margin: 1rem 0;
         background-color: var(--info-color);
         border-radius: 15px;
+        box-sizing: border-box;
     }
 
     .whatis__info h3 {
         text-align: center;
-        margin-bottom: 1.5rem;
-        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+        font-size: 1.6rem;
+        line-height: 1.4;
     }
 
     .whatis__info p {
         text-align: justify;
         text-align-last: center;
         hyphens: auto;
-        font-size: 1.2rem;
-        line-height: 1.6;
+        font-size: 1.1rem;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0 0.5rem;
     }
 
     .whatis__content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2.5rem;
-        padding: 1rem;
+        gap: 2rem;
+        padding: 0.5rem;
+        width: 100%;
     }
 
     .whatis__heading {
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
+        width: 100%;
     }
 
     .whatis__heading h2 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
+
+    .whatis__image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    .whatis__image img {
+        max-width: 80%;
+        height: auto;
     }
 
     .howtobuy {
