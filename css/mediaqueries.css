@@ -171,6 +171,27 @@
         flex-wrap: wrap;
         gap: 0;
     }
+
+    .chart {
+        padding: 2rem 0;
+    }
+
+    .chart h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .chart__container {
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    .chart__container iframe {
+        border-radius: 15px;
+        background-color: #0A196F;
+    }
 }
 
 @media screen and (max-width: 575px) {
