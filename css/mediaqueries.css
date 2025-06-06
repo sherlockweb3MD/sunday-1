@@ -60,7 +60,7 @@
         text-align: center;
         padding: 1.5rem;
         margin: 1rem 0;
-        background-color: var(--info-color);
+        background-color: #0A196F;
         border-radius: 15px;
         box-sizing: border-box;
     }
@@ -130,7 +130,7 @@
         width: 100%;
         padding: 1.5rem;
         margin-bottom: 2rem;
-        background-color: var(--info-color);
+        background-color: #0A196F;
         border-radius: 15px;
         box-sizing: border-box;
     }
