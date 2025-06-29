@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pumpfun 2 Million Times</title>
+    <title>First Fart Token - The Original Gas</title>
     <style>
       body {
-        background: #f6fff7;
-        color: #1b5e20;
+        background: #1a1a1a;
+        color: #ffd700;
         font-family: 'Segoe UI', Arial, sans-serif;
         display: flex;
         flex-direction: column;
@@ -20,11 +20,11 @@
       .container {
         max-width: 600px;
         padding: 2rem;
-        background: #ffffff;
+        background: #2a2a2a;
         border-radius: 18px;
-        box-shadow: 0 4px 32px rgba(34, 139, 34, 0.08);
+        box-shadow: 0 4px 32px rgba(255, 215, 0, 0.15);
         text-align: center;
-        border: 2px solid #43a047;
+        border: 2px solid #ffd700;
       }
       .logo {
         width: 100px;
@@ -33,53 +33,98 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #e8f5e9;
+        background: #ffd700;
         border-radius: 50%;
-        border: 2px solid #43a047;
+        border: 3px solid #000;
         overflow: hidden;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #000;
       }
       .logo img {
-        width: 80px;
-        height: 80px;
+        width: 100%;
+        height: 100%;
         object-fit: contain;
+      }
+      .logo-placeholder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffd700;
+        color: #000;
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+      .banner {
+        width: 100%;
+        max-width: 500px;
+        height: 150px;
+        margin: 0 auto 2rem auto;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 2px solid #ffd700;
+        background: #000;
+      }
+      .banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .banner-placeholder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, #000, #2a2a2a);
+        color: #ffd700;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 1rem;
       }
       h1 {
         font-size: 2.5rem;
         margin-bottom: 1.5rem;
-        color: #43a047;
+        color: #ffd700;
         letter-spacing: 1px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
       .desc {
         font-size: 1.2rem;
         margin-bottom: 2rem;
-        color: #1b5e20;
+        color: #ffd700;
+        line-height: 1.6;
       }
       .highlight {
-        color: #00c853;
+        color: #ffff00;
         font-weight: bold;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
       }
       .contract {
-        background: #e8f5e9;
-        color: #1b5e20;
+        background: #000;
+        color: #ffd700;
         border-radius: 8px;
         padding: 0.7rem 1rem;
         margin: 1.5rem 0 2rem 0;
         font-size: 1.05rem;
         word-break: break-all;
-        border: 1px solid #43a047;
+        border: 1px solid #ffd700;
         display: flex;
         flex-direction: column;
         align-items: center;
       }
       .contract-label {
         font-size: 0.95rem;
-        color: #388e3c;
+        color: #ffff00;
         margin-bottom: 0.3rem;
       }
       .buy-btn {
         display: inline-block;
-        background: linear-gradient(90deg, #43a047 60%, #00c853 100%);
-        color: #fff;
+        background: linear-gradient(90deg, #ffd700 60%, #ffff00 100%);
+        color: #000;
         font-size: 1.2rem;
         font-weight: bold;
         padding: 0.9rem 2.2rem;
@@ -89,49 +134,148 @@
         margin-top: 0.5rem;
         cursor: pointer;
         text-decoration: none;
-        box-shadow: 0 2px 12px rgba(67, 160, 71, 0.12);
-        transition: background 0.2s, transform 0.2s;
+        box-shadow: 0 2px 12px rgba(255, 215, 0, 0.3);
+        transition: all 0.2s;
       }
       .buy-btn:hover {
-        background: linear-gradient(90deg, #00c853 60%, #43a047 100%);
+        background: linear-gradient(90deg, #ffff00 60%, #ffd700 100%);
         transform: scale(1.04);
+        box-shadow: 0 4px 20px rgba(255, 215, 0, 0.5);
       }
       .footer {
         margin-top: 2rem;
-        color: #388e3c;
+        color: #ffd700;
         font-size: 0.95rem;
       }
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin: 1rem 0;
+      }
+      .social-link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #ffff00;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border: 1px solid #ffd700;
+        border-radius: 8px;
+        transition: all 0.2s;
+      }
+      .social-link:hover {
+        color: #ffd700;
+        background: #000;
+        transform: scale(1.05);
+      }
+      .social-icon {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffd700;
+        border-radius: 4px;
+        color: #000;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .social-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
       a {
-        color: #388e3c;
+        color: #ffff00;
         text-decoration: underline;
       }
       a:hover {
-        color: #00c853;
+        color: #ffd700;
+      }
+      .gas-meter {
+        background: #000;
+        border: 2px solid #ffd700;
+        border-radius: 8px;
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+      .gas-level {
+        height: 20px;
+        background: linear-gradient(90deg, #ffd700, #ffff00);
+        border-radius: 10px;
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.7; }
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="logo">
-        <!-- Place your logo image here -->
-        <img src="circular.jpg" alt="Pumpfun Logo"> 
+        <img src="fart-logo.jpg" alt="First Fart Token Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="logo-placeholder" style="display: none;">💨</div>
       </div>
-      <h1>Saying <span class="highlight">pumpfun</span> 2 Million Times <span class="highlight">LIVE</span></h1>
+      
+      <div class="banner">
+        <img src="fart-banner.jpg" alt="First Fart Token Banner" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="banner-placeholder" style="display: none;">
+          FIRST FART TOKEN<br>
+          THE ORIGINAL GAS
+        </div>
+      </div>
+      
+      <h1>First <span class="highlight">Fart</span> Token</h1>
       <div class="desc">
-        1 million? <span class="highlight">-- nahh</span>, I'll double that.<br><br>
-        I'm saying <span class="highlight">pumpfun</span> live <span class="highlight">2 million times</span>.<br>
-        Will not leave my room until I do so.<br><br>
-        It took Mr Beast 12h to say PewDiePie 100,000 times.<br>
-        However long it takes me, I'll livestream every moment of it.
+        The <span class="highlight">original gas</span> that started it all!<br><br>
+        Before there was Bitcoin, before there was Ethereum...<br>
+        There was the <span class="highlight">First Fart</span>.<br><br>
+        Join the <span class="highlight">gas revolution</span> and be part of history!<br>
+        The token that's literally <span class="highlight">blowing up</span> the crypto world.
       </div>
+      
+      <div class="gas-meter">
+        <div style="margin-bottom: 0.5rem; font-weight: bold;">Gas Level: MAXIMUM</div>
+        <div class="gas-level"></div>
+      </div>
+      
       <div class="contract">
         <span class="contract-label">Contract Address:</span>
-        <span>873JBCpUAzWzLgf7uPZFWMTXAGBiGYEudz5xj6BZpump</span>
+        <span>uv3SoYMrGAsjDyrv5VLPGBUiXrfC5u5otX4NwR1fart</span>
       </div>
-      <a class="buy-btn" href="https://pump.fun/coin/873JBCpUAzWzLgf7uPZFWMTXAGBiGYEudz5xj6BZpump?include-nsfw=true" target="_blank" rel="noopener">Buy on Pump.fun</a>
+      <a class="buy-btn" href="https://pump.fun/advanced/coin?mintId=uv3SoYMrGAsjDyrv5VLPGBUiXrfC5u5otX4NwR1fart" target="_blank" rel="noopener">Buy on Pump.fun</a>
       <div class="footer">
-        &copy; 2025 Pumpfun Meme Coin. All rights reserved.<br>
-        Follow the madness on <a href="https://twitter.com/basedape_eth">Twitter</a> & <a href="https://t.me/basedape_eth">Telegram</a>
+        &copy; 2025 First Fart Token. All rights reserved.<br>
+        
+        <div class="social-links">
+          <a href="#" class="social-link" target="_blank" rel="noopener">
+            <div class="social-icon">
+              <!-- Replace telegram-icon.png with your actual Telegram icon -->
+              <img src="telegram-icon.png" alt="Telegram" onerror="this.style.display='none'; this.parentElement.innerHTML='TG';">
+            </div>
+            Telegram
+          </a>
+          
+          <a href="#" class="social-link" target="_blank" rel="noopener">
+            <div class="social-icon">
+              <!-- Replace x-icon.png with your actual X (Twitter) icon -->
+              <img src="x-icon.png" alt="X (Twitter)" onerror="this.style.display='none'; this.parentElement.innerHTML='X';">
+            </div>
+            X (Twitter)
+          </a>
+          
+          <a href="https://www.mexc.com/dex/pumpfun-mexc?ca=uv3SoYMrGAsjDyrv5VLPGBUiXrfC5u5otX4NwR1fart&currency=SOL" class="social-link" target="_blank" rel="noopener">
+            <div class="social-icon">
+              <!-- Replace mexc-icon.png with your actual MEXC icon -->
+              <img src="mexc-icon.png" alt="MEXC" onerror="this.style.display='none'; this.parentElement.innerHTML='MX';">
+            </div>
+            MEXC
+          </a>
+        </div>
+        
+        <!-- <span style="font-size: 0.8rem; color: #888;">*Not financial advice - DYOR before you gas up!</span> -->
       </div>
     </div>
   </body>
